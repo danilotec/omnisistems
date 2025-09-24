@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnisistems - Sites e Sistemas Sob Medida</title>
+    <meta name="description" content="Construímos sites e sistemas para o futuro do seu negócio. Soluções digitais personalizadas para empresas que querem crescer com tecnologia de ponta.">
+    <meta name="author" content="Omnisistems">
+    <meta name="keywords" content="criação de sites, sistemas web, desenvolvimento, tecnologia, inovação, São Paulo">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Omnisistems - Sites e Sistemas Sob Medida">
+    <meta property="og:description" content="Construímos sites e sistemas para o futuro do seu negócio. Soluções digitais personalizadas para empresas que querem crescer.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./static/images/hero-tech.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="./static/images/hero-tech.jpg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <button onclick="scrollToSection('inicio')" class="logo-text">
+                        Omnisistems
+                    </button>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <button onclick="scrollToSection('inicio')" class="nav-link">Início</button>
+                    <button onclick="scrollToSection('servicos')" class="nav-link">Serviços</button>
+                    <button onclick="scrollToSection('sobre')" class="nav-link">Sobre</button>
+                    <button onclick="scrollToSection('contato')" class="nav-link">Contato</button>
+                </nav>
+
+                <!-- CTA Button - Desktop -->
+                <div class="cta-desktop">
+                    <button onclick="scrollToSection('contato')" class="btn btn-primary btn-glow">
+                        Solicitar Orçamento
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile" id="mobileNav">
+                <nav class="nav-mobile-content">
+                    <button onclick="scrollToSection('inicio')" class="nav-mobile-link">Início</button>
+                    <button onclick="scrollToSection('servicos')" class="nav-mobile-link">Serviços</button>
+                    <button onclick="scrollToSection('sobre')" class="nav-mobile-link">Sobre</button>
+                    <button onclick="scrollToSection('contato')" class="nav-mobile-link">Contato</button>
+                    <button onclick="scrollToSection('contato')" class="btn btn-primary btn-mobile-cta">
+                        Solicitar Orçamento
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <!-- Animated Background Elements -->
+        <div class="hero-dots">
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <!-- Badge -->
+                <div class="hero-badge">
+                    <i data-lucide="sparkles"></i>
+                    <span>Soluções Digitais Inovadoras</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="hero-title">
+                    Construímos sites e sistemas<br>
+                    <span class="text-gradient">para o futuro</span><br>
+                    do seu negócio
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="hero-subtitle">
+                    Soluções digitais personalizadas para empresas que querem crescer
+                    com tecnologia de ponta e design inovador.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('contato')" class="btn btn-secondary btn-lg">
+                        Solicitar Orçamento
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    <button onclick="scrollToSection('servicos')" class="btn btn-outline btn-lg">
+                        Ver Serviços
+                    </button>
+                </div>
+
+                <!-- Stats -->
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projetos Entregues</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Clientes Satisfeitos</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Suporte Técnico</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    Nossos <span class="text-gradient">Serviços</span>
+                </h2>
+                <p class="section-subtitle">
+                    Oferecemos soluções completas em tecnologia para impulsionar o crescimento 
+                    do seu negócio com qualidade e inovação.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon bg-gradient-blue">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3 class="service-title">Criação de Sites</h3>
+                    <p class="service-description">
+                        Sites responsivos, modernos e otimizados para SEO. Desde landing pages até e-commerce completos.
+                    </p>
+                    <ul class="service-features">
+                        <li><span class="feature-dot"></span>Design Responsivo</li>
+                        <li><span class="feature-dot"></span>SEO Otimizado</li>
+                        <li><span class="feature-dot"></span>Alta Performance</li>
+                        <li><span class="feature-dot"></span>CMS Personalizado</li>
+                    </ul>
+                    <button onclick="scrollToSection('contato')" class="service-cta">
+                        Saiba Mais
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon bg-gradient-primary">
+                        <i data-lucide="settings"></i>
+                    </div>
+                    <h3 class="service-title">Sistemas Web Sob Medida</h3>
+                    <p class="service-description">
+                        Desenvolvimento de sistemas personalizados que atendem às necessidades específicas do seu negócio.
+                    </p>
+                    <ul class="service-features">
+                        <li><span class="feature-dot"></span>Arquitetura Escalável</li>
+                        <li><span class="feature-dot"></span>Integração de APIs</li>
+                        <li><span class="feature-dot"></span>Banco de Dados</li>
+                        <li><span class="feature-dot"></span>Painéis Administrativos</li>
+                    </ul>
+                    <button onclick="scrollToSection('contato')" class="service-cta">
+                        Saiba Mais
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon bg-gradient-accent">
+                        <i data-lucide="headphones"></i>
+                    </div>
+                    <h3 class="service-title">Suporte e Manutenção</h3>
+                    <p class="service-description">
+                        Garantimos que seus sistemas funcionem perfeitamente com suporte técnico especializado 24/7.
+                    </p>
+                    <ul class="service-features">
+                        <li><span class="feature-dot"></span>Monitoramento 24/7</li>
+                        <li><span class="feature-dot"></span>Backup Automático</li>
+                        <li><span class="feature-dot"></span>Atualizações</li>
+                        <li><span class="feature-dot"></span>Suporte Técnico</li>
+                    </ul>
+                    <button onclick="scrollToSection('contato')" class="service-cta">
+                        Saiba Mais
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="services-cta">
+                <div class="cta-card">
+                    <h3 class="cta-title">Pronto para transformar seu negócio?</h3>
+                    <p class="cta-description">
+                        Entre em contato conosco e descubra como podemos ajudar sua empresa a crescer.
+                    </p>
+                    <button onclick="scrollToSection('contato')" class="btn btn-primary btn-lg btn-glow">
+                        Falar com Especialista
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <!-- Text Content -->
+                <div class="about-text">
+                    <div class="about-badge">
+                        <i data-lucide="users"></i>
+                        <span>Sobre a Omnisistems</span>
+                    </div>
+                    
+                    <h2 class="about-title">
+                        Uma empresa <span class="text-gradient">jovem e inovadora</span><br>
+                        focada no seu sucesso
+                    </h2>
+                    
+                    <p class="about-description">
+                        A Omnisistems nasceu com o propósito de democratizar o acesso a soluções 
+                        digitais de alta qualidade. Somos uma empresa nova no mercado, mas com uma 
+                        visão clara: entregar tecnologia que transforma negócios.
+                    </p>
+
+                    <p class="about-description">
+                        Nossa equipe é formada por profissionais apaixonados por tecnologia, 
+                        sempre atualizados com as mais recentes tendências do mercado. Combinamos 
+                        juventude, energia e conhecimento técnico para criar soluções que fazem a diferença.
+                    </p>
+
+                    <!-- Achievements List -->
+                    <ul class="achievements-list">
+                        <li><i data-lucide="check-circle"></i>Empresa jovem e inovadora no mercado</li>
+                        <li><i data-lucide="check-circle"></i>Equipe especializada em tecnologias modernas</li>
+                        <li><i data-lucide="check-circle"></i>Foco em soluções personalizadas e escaláveis</li>
+                        <li><i data-lucide="check-circle"></i>Suporte técnico completo e dedicado</li>
+                    </ul>
+
+                    <button onclick="scrollToSection('contato')" class="btn btn-primary btn-lg btn-glow">
+                        Conheça Nossa Equipe
+                    </button>
+                </div>
+
+                <!-- Image -->
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="./static/images/about-team.jpg" alt="Equipe Omnisistems trabalhando em projetos inovadores">
+                    </div>
+                    
+                    <!-- Floating Card -->
+                    <div class="floating-card">
+                        <div class="card-year">2024</div>
+                        <div class="card-title">Fundada com o objetivo</div>
+                        <div class="card-subtitle">de inovar o mercado digital</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values Section -->
+            <div class="values-section">
+                <div class="section-header">
+                    <h3 class="values-title">
+                        Nossos <span class="text-gradient">Valores</span>
+                    </h3>
+                    <p class="values-subtitle">
+                        Os princípios que guiam nossa jornada e definem nossa identidade como empresa.
+                    </p>
+                </div>
+
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon bg-gradient-primary">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <h4 class="value-title">Foco no Cliente</h4>
+                        <p class="value-description">
+                            Suas necessidades são nossa prioridade. Desenvolvemos soluções personalizadas para cada projeto.
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon bg-gradient-primary">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h4 class="value-title">Inovação Constante</h4>
+                        <p class="value-description">
+                            Utilizamos as mais recentes tecnologias para entregar soluções modernas e eficientes.
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon bg-gradient-primary">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h4 class="value-title">Parceria de Sucesso</h4>
+                        <p class="value-description">
+                            Construímos relacionamentos duradouros baseados na confiança e resultados excepcionais.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    Entre em <span class="text-gradient">Contato</span>
+                </h2>
+                <p class="section-subtitle">
+                    Pronto para transformar suas ideias em realidade? Vamos conversar sobre 
+                    seu projeto e como podemos ajudar seu negócio a crescer.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3 class="contact-title">Vamos trabalhar juntos</h3>
+                        <p class="contact-description">
+                            Nossa equipe está pronta para ouvir suas necessidades e criar 
+                            soluções personalizadas para o seu negócio.
+                        </p>
+                    </div>
+
+                    <!-- Contact Info Cards -->
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon bg-gradient-primary">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">E-mail</div>
+                                <a href="mailto:contato@omnisistems.com.br" class="contact-value">
+                                    contato@omnisistems.com.br
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon bg-gradient-primary">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Telefone</div>
+                                <a href="tel:+5579998891179" class="contact-value">
+                                    (79) 99889-1179
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon bg-gradient-primary">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Localização</div>
+                                <span class="contact-value">Aracaju, SE - Brasil</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="contact-features">
+                        <h4 class="features-title">Por que escolher a Omnisistems?</h4>
+                        <ul class="features-list">
+                            <li><i data-lucide="check-circle"></i>Resposta rápida em até 24h</li>
+                            <li><i data-lucide="check-circle"></i>Orçamento gratuito e personalizado</li>
+                            <li><i data-lucide="check-circle"></i>Acompanhamento completo do projeto</li>
+                            <li><i data-lucide="check-circle"></i>Suporte pós-entrega garantido</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome completo *</label>
+                                <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem *</label>
+                            <textarea id="message" name="message" placeholder="Conte-nos sobre seu projeto, suas necessidades e objetivos..." rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-full btn-glow" id="submitBtn">
+                            <span class="btn-text">Enviar Mensagem</span>
+                            <span class="btn-loading hidden">
+                                <div class="spinner"></div>
+                                Enviando...
+                            </span>
+                            <i data-lucide="send"></i>
+                        </button>
+
+                        <p class="form-privacy">
+                            Ao enviar esta mensagem, você concorda com nossa política de privacidade.
+                            Seus dados estão seguros conosco.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Main Footer -->
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <div class="footer-logo">Omnisistems</div>
+                    <p class="footer-description">
+                        Transformamos ideias em soluções digitais inovadoras. 
+                        Somos sua parceria tecnológica para o futuro.
+                    </p>
+                    
+                    <div class="footer-contacts">
+                        <div class="footer-contact">
+                            <i data-lucide="mail"></i>
+                            <span>contato@omnisistems.com.br</span>
+                        </div>
+                        <div class="footer-contact">
+                            <i data-lucide="phone"></i>
+                            <span>(79) 99889-1179</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Navegação</h3>
+                    <ul class="footer-links">
+                        <li><button onclick="scrollToSection('inicio')">Início</button></li>
+                        <li><button onclick="scrollToSection('servicos')">Serviços</button></li>
+                        <li><button onclick="scrollToSection('sobre')">Sobre</button></li>
+                        <li><button onclick="scrollToSection('contato')">Contato</button></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Serviços</h3>
+                    <ul class="footer-links">
+                        <li>Criação de Sites</li>
+                        <li>Sistemas Web</li>
+                        <li>E-commerce</li>
+                        <li>Suporte Técnico</li>
+                    </ul>
+                </div>
+
+                <!-- Social & Newsletter -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Conecte-se</h3>
+                    <p class="footer-social-text">
+                        Siga-nos nas redes sociais para ficar por dentro das novidades.
+                    </p>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-link">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+
+                    <p class="footer-note">
+                        Acompanhe nossos projetos e conquistas.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        © <span id="currentYear"></span> Omnisistems. Todos os direitos reservados.
+                    </div>
+                    
+                    <div class="footer-legal">
+                        <button class="legal-link">Política de Privacidade</button>
+                        <button class="legal-link">Termos de Uso</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <div class="toast-icon">
+                <i data-lucide="check-circle"></i>
+            </div>
+            <div class="toast-message">
+                <div class="toast-title">Mensagem enviada com sucesso!</div>
+                <div class="toast-description">Entraremos em contato em breve. Obrigado pelo interesse!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./static/js/script.js"></script>
+</body>
+</html>
