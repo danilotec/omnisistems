@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expõe a porta padrão do Flask
-EXPOSE 7000
+EXPOSE 5000
 
 # Define a variável de ambiente para rodar o Flask
 ENV FLASK_APP=app.py
